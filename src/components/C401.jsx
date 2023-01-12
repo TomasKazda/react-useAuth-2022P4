@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import requireAuth from "./hocauth"
 const C401 = () => {
     return (
         <div><h1>Unauthorized... 
@@ -8,4 +9,4 @@ const C401 = () => {
     )
 }
 
-export default C401;
+export default requireAuth(C401);
